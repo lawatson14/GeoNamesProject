@@ -2,7 +2,7 @@
 
 	$executionStartTime = microtime(true) / 1000;
 
-	$url='http://api.geonames.org/neighboursJSON?geonameId=' . $_REQUEST['countryCode'] . '&username=leewatson14';
+	$url='https://api.geonames.org/neighboursJSON?geonameId=' . $_REQUEST['countryCode'] . '&username=leewatson14';
 
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
