@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>IT Careers | Practice Task</title>
+	<meta name="description" content="AJAX/PHP/CURL/JSON example">
+	<meta name="author" content="Lee Watson">
+
+	<style>
+table{
+	margin: 0px auto;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+th, td{
+	padding: 10px 15px;
+	text-align: center;
+	border: 1px solid #000;
+}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>API Name</th>
+				<th>API Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1. Post Code Search</td>
+				<td>Returns the street address for the provided US postal code.</td>
+				<td>
+					<label>Enter US Postcode (must be a 5 digit number): </label>
+					<input type="number" id="inpPostalCode" name="postalCode" min="9999" max="99999" title="Must be a 5 digit number">
+					<button id="btn1">Submit</button>
+				</td>
+			</tr>
+			<tr>
+				<td>2. Country Neighbours</td>
+				<td>Returns all neighbouring countries for a given country</td>
+				<td>
+					<select id="inpCountry">
+						<option value="3017382">France</option>
+						<option value="2921044">Germany</option>
+						<option value="2782113">Austria</option>
+						<option value="2658434">Switzerland</option>
+						<option value="3175395">Italy</option>
+					</select>
+					<button id="btn2">Submit</button>
+				</td>
+			</tr>
+			<tr>
+				<td>3. Area Hierachy</td>
+				<td>Returns all GeoNames higher up in the hierarchy of a place based on a Geo Code.</td>
+				<td>
+					<label>Enter a geo code (max 7 digit number): </label>
+					<input type="number" id="inpAreaCode" name="areaCode" pattern="[0-9]" max="9999999" title="Max 7 digit number">
+					<button id="btn3">Submit</button>
+				</td>
+			</tr>
+			<tr><th colspan="3">Results</th></tr>
+			<tr>
+				<td colspan="3">
+					<p>
+						<span id="rsp1"></span><br>
+						<span id="rsp2"></span><br>
+						<span id="rsp3"></span><br>
+						<span id="rsp4"></span><br>
+						<span id="rsp5"></span><br>
+						<span id="rsp6"></span><br>
+						<span id="rsp7"></span>
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+	<script type="application/javascript" src="libs/js/script.js"></script>
+</body>
+</html>
